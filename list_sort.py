@@ -6,7 +6,7 @@ def list_sort(list1):
 
     #checking whether list1 is of type list
     if not isinstance(list1, list):
-        return 'invalid input'
+        return 'Invalid Input'
 
     # 
     for i in list1:
@@ -20,9 +20,9 @@ def list_sort(list1):
 
         elif isinstance(i, str):
             char.append(i)
-    mydictionary['even'] = sorted(even)
-    mydictionary['odd'] = sorted(odd)
-    mydictionary['char'] = sorted(char)
+    mydictionary['evens'] = sorted(even)
+    mydictionary['odds'] = sorted(odd)
+    mydictionary['chars'] = sorted(char)
     return mydictionary
         
 print(list_sort([10, 2, 8, 'c', 'f']))
